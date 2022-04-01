@@ -1,0 +1,25 @@
+<h1>Welcome to the Sandwich Shop!</h1>
+
+<h2 style="color:sienna;" >Ingredients</h2>
+
+<ul>
+    {% for ingredient in ingredients %}
+    <li>
+        <a href="/sandwich/ingredients/{{ ingredient }}">{{ ingredient }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<p>Click the button if you are hungry!</p>
+
+<body> 
+    <img src="https://www.petplace.com/static/1d5045ce8bf44707dea56c267a8e5353/59a5c/1686_dogs847f287932836e0c9fadff0000838b2d.jpg" alt="Hungry!" width="400">
+</body>
+
+<br>
+<br>
+<br>
+
+<form action="/sandwich/random">
+    <input type="submit" value="Make a sandwich!" />
+</form>
